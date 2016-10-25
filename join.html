@@ -1,0 +1,470 @@
+﻿<!doctype html>
+<!--[if IE 8 ]><html class="ie no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN"> <![endif]-->
+<!--[if IE 9]> <html class="ie9 no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>加入我们 - 宜保</title>
+    <meta name="description" content="e爱健康，癌症，保险，健康，TPA.">
+    <meta name="keywords" content="e爱健康，癌症，保险，健康，TPA.">
+    <meta name="author" content="e爱健康">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><script>if (confirm('你正在使用 Internet Explorer 的过期版本。请使用升级您的浏览器。')) {location.href = 'http://ie.microsoft.com';}</script>
+	<![endif]-->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Fonts -->
+    <!--<link href='http://fonts.useso.com/css?family=Lato:300,400|Montserrat' rel='stylesheet' type='text/css'>-->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/framework.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .gray-box .title {
+            height: 60px;
+            padding: 0 10px 0 30px;
+            border-bottom: 1px solid #d4d4d4;
+            border-radius: 8px 8px 0 0;
+            box-shadow: rgba(0, 0, 0, .06) 0 1px 7px;
+            background: #f3f3f3;
+            background: -webkit-linear-gradient(#fbfbfb, #ececec);
+            background: linear-gradient(#fbfbfb, #ececec);
+            line-height: 60px;
+            font-size: 18px;
+            color: #333;
+            position: relative;
+        }
+        
+        .gray-box .title h2 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 60px;
+            float: left;
+        }
+        
+        .gray-box {
+            width: 100%;
+            background: #fff;
+            border-radius: 8px;
+            border: 1px solid #dcdcdc;
+            border-color: rgba(0, 0, 0, .14);
+            box-shadow: 0 3px 8px -6px rgba(0, 0, 0, .1);
+            margin-bottom: 50px;
+        }
+        
+        .gray-box .title p {
+            margin-right: 10px;
+            float: right;
+            line-height: 60px;
+            color: #666;
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        .gray-box .title p a {
+            color: #5c85e5;
+        }
+        
+        .job-list-head {
+            overflow: hidden;
+            background: #f2f2f2;
+            width: 100%;
+        }
+        
+        .job-list-head li:first-child {
+            border-left: none;
+        }
+        
+        .job-list .job-list-head .job-name {
+            color: #8d8d8d;
+            width: 25%;
+            padding-left: 29px;
+            float: left;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+        
+        .job-list-head li {
+            line-height: 37px;
+            border-left: 1px solid #e4e4e4;
+            border-left: 1px solid rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 12px;
+            background: #f2f2f2;
+        }
+        
+        .job-list-body>li.active,
+        .job-list-body>li:hover {
+            background: #fafafa;
+        }
+        
+        .job-list-body>li {
+            overflow: hidden;
+            border-bottom: none;
+        }
+        
+        .job-list-body .job-line {
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+        
+        .job-list-body .job-name {
+            cursor: pointer;
+            line-height: 34px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #8d8d8d;
+            width: 25%;
+            padding-left: 29px;
+            float: left;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .job-list-body .job-a {
+            cursor: pointer;
+            line-height: 0px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #8d8d8d;
+            width: 25%;
+            float: left;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .job-list-body .job-a a {
+            margin: 0 auto;
+        }
+        
+        .job-content {
+            border-top: 1px solid #e5e5e5;
+            background: #f5f5f5;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, .06);
+            padding: 56px 60px 60px;
+        }
+        
+        .job-content hr {
+            border: none;
+            border-top: 1px solid #e7e7e7;
+        }
+        
+        .job-list-body .job-block {
+            margin-top: 22px;
+            border-top: 1px solid #e7e7e7;
+            padding-top: 26px;
+        }
+        
+        .job-list-body .job-block:first-child {
+            border-top: none;
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
+        .job-list-body .job-content h3 {
+            margin-bottom: 9px;
+            font-size: 16px;
+            color: #878787;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+        
+        .job-list-body .job-content ol>li {
+            list-style-type: decimal;
+            margin-left: 17px;
+            color: #999;
+            line-height: 2.15;
+            font-size: 14px;
+        }
+        
+        .job-list-body .job-content h4 {
+            color: #878787;
+            font-weight: 700;
+            line-height: 2.15;
+        }
+        
+        .job-list li.hide-content .job-content {
+            display: none;
+        }
+		@media (max-width: 768px) {
+			.gray-box{    border-radius: 0px;}
+			.gray-box .title{padding: 0 10px;}
+			.gray-box .title h2{font-size: 16px;}
+			.gray-box .title p{font-size: 12px;}
+			.job-list-body .job-name,.job-list .job-list-head .job-name{font-size: 12px;padding-left: 0px;text-align: center;}
+			.job-content{padding: 20px 22px 22px;}
+		}
+    </style>
+</head>
+
+<body>
+    <!-- Begin Navigation -->
+    <nav class="mobile">
+
+
+        <!-- Menu -->
+        <ul class="nav-content clearfix"></ul>
+        <!-- END -->
+
+    </nav>
+    <header class="mobile">
+
+        <!-- Logo -->
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="Form Logo" width="96" height="35" /></a>
+
+        <!-- Menu Button -->
+        <button type="button" class="nav-button">
+		  <div class="button-bars"></div>
+	    </button>
+        <!-- END -->
+
+    </header>
+
+    <div class="sticky-head"></div>
+    <!-- End Navigation -->
+
+    <!-- Begin Small Hero Block -->
+    <section class="hero small accent parallax" style="background-image: url(images/parallax.png);">
+
+        <!-- Heading -->
+        <div class="hero-content container">
+            <h1>加入我们</h1>
+        </div>
+        <!-- END -->
+
+        <!-- Button -->
+        <div class="sub-hero container">
+            <span class="line"></span>
+        </div>
+        <!-- END -->
+
+    </section>
+    <!-- End Small Hero Block -->
+
+    <!-- Begin Blog Block -->
+    <section class="content container">
+        <div class="row">
+            <div class="gray-box">
+                <div class="title">
+                    <h2>职位列表</h2>
+                    <p>欢迎投递简历至：<a href="mailto:hr@e-surer.com">hr@e-surer.com</a></p>
+                </div>
+                <div class="job-list">
+                    <ul class="job-list-head">
+                        <li class="job-name">职位</li>
+                        <li class="job-name">工作职能</li>
+                        <li class="job-name">工作地点</li>
+                        <li class="job-name">操作</li>
+                    </ul>
+                    <ul class="job-list-body">
+                        <li class="hide-content">
+                            <ul class="job-line">
+                                <li class="job-name">业务支持</li>
+                                <li class="job-name">内勤</li>
+                                <li class="job-name">上海-浦东</li>
+                                <li class="job-a"><a class="button accent-alt">查看</a></li>
+                            </ul>
+                            <div class="job-content">
+                                <div class="job-block">
+                                    <h3 id="section">岗位职责：</h3>
+                                    <ol>
+                                        <li>负责管辖项目日常数据的统计、整理、审查、汇总分析，提报等工作；</li>
+                                        <li>根据指标，负责管辖项目业绩完成情况的时时监控，完成情况分析；</li>
+                                        <li>负责所辖项目业务人员绩效考核及分析；</li>
+                                        <li>负责所辖项目指标制定及推动方案的制定；</li>
+                                        <li>负责与项目合作客户及内部相关部门的沟通及协调，保证项目正常运作。</li>
+                                    </ol>
+                                </div>
+                                <div class="job-block">
+                                    <h3 id="section-1">我们对您的期望</h3>
+                                    <h4 id="section-2">必备条件</h4>
+                                    <ol>
+                                        <li>本科以上学历（有同业经验可放宽至大专，薪资根据面试而定）；</li>
+                                        <li>1年以上工作经验（ 优秀应届毕业生也可考虑）；</li>
+                                        <li>熟练操作办公office；excel一般数据处理的公式应可熟练使用；</li>
+                                        <li>喜欢数据分析，对数据有一定敏感度。</li>
+                                        <li>善于沟通，抗压能力强，责任心强。</li>
+                                    </ol>
+                                    <h4 id="section-3">优先条件</h4>
+                                    <ol>
+                                        <li>有过数据处理、项目运营工作经验。</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hide-content">
+                            <ul class="job-line">
+                                <li class="job-name">培训讲师</li>
+                                <li class="job-name">培训</li>
+                                <li class="job-name">上海-浦东</li>
+                                <li class="job-a"><a class="button accent-alt">查看</a></li>
+                            </ul>
+                            <div class="job-content">
+                                <div class="job-block">
+                                    <h3 id="section">岗位职责：</h3>
+                                    <ol>
+                                        <li>组织制定相关培训计划并实施，完成金融理财基础课程的课件研发及讲义制作并独立授课；</li>
+                                        <li>负责销售部培训需求统计分析，结合实际情况拟定培训计划并组织实施；</li>
+                                        <li>负责建立培训数据库、建立员工培训档案及培训大纲；</li>
+                                        <li>内部培训师培养；</li>
+                                        <li>重点开展新人培训班的组织及实施，完善新人育成系统，通过系统化培训及辅导追踪提升新人留存率、转正率；</li>
+                                        <li>指导团队经理日常团队辅导及训练，做好新人消化的推动与促进。</li>
+                                    </ol>
+                                </div>
+                                <div class="job-block">
+                                    <h3 id="section-1">我们对您的期望</h3>
+                                    <h4 id="section-2">必备条件</h4>
+                                    <ol>
+                                        <li>本科及以上学历，具有保险金融行业相关岗位1年及以上工作经验，专业知识扎实；</li>
+                                        <li>熟练掌握企业培训需求调研、分析方法及工具、有独立授课能力；</li>
+                                        <li>高度的工作热情、责任感，良好的团队合作精神； 具有优秀的沟通能力、控制能力、计划管理能力、文字能力、语言表达能力；</li>
+                                        <li>技能要求：擅长PPT、EXCEL等必需办公软件。</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hide-content">
+                            <ul class="job-line">
+                                <li class="job-name">市场部负责人</li>
+                                <li class="job-name">保险</li>
+                                <li class="job-name">上海-浦东</li>
+                                <li class="job-a"><a class="button accent-alt">查看</a></li>
+                            </ul>
+                            <div class="job-content">
+                                <div class="job-block">
+                                    <h3 id="section">岗位职责：</h3>
+                                    <ol>
+                                        <li>负责部门架构建设和制度建设，对部门人员进行管理、辅导、绩效考核与激励；</li>
+                                        <li>根据公司战略规划，进行合作项目洽商；负责新业务模式的创新及探索；</li>
+                                        <li>负责合作项目规划及项目筹建；负责项目流程优化和资源整合；</li>
+                                        <li>负责协调公司内部资源，指导、协助下属各项目责任人日常工作，保证运营稳定、业务指标达成。</li>
+                                    </ol>
+                                </div>
+                                <div class="job-block">
+                                    <h3 id="section-1">我们对您的期望</h3>
+                                    <h4 id="section-2">必备条件</h4>
+                                    <ol>
+                                        <li>统招本科以上学历；</li>
+                                        <li>1年以上工作经验（ 优秀应届毕业生也可考虑）；</li>
+                                        <li>出色的部门管理和人员辅导培训能力；</li>
+                                        <li>良好的沟通及文字表达能力。</li>
+                                    </ol>
+                                    <h4 id="section-3">优先条件</h4>
+                                    <ol>
+                                        <li>6年以上工作经验，其中至少3年以上的保险或其他金融行业从业经验。如有网销、电销、保险行业工作经验。</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hide-content">
+                            <ul class="job-line">
+                                <li class="job-name">质检运营部负责人</li>
+                                <li class="job-name">保险</li>
+                                <li class="job-name">上海-浦东</li>
+                                <li class="job-a"><a class="button accent-alt">查看</a></li>
+                            </ul>
+                            <div class="job-content">
+                                <div class="job-block">
+                                    <h3 id="section">岗位职责：</h3>
+                                    <ol>
+                                        <li>全面负责公司的品质检核、客户服务和抱怨处理、后台运营、保单保全等管理工作；承担并完成部门业务指标； 带领和辅导下属进行日常品质检核工作，提供品质提升建议；</li>
+                                        <li>带领和辅导下属进行客户服务工作，负责协调各部门处理顾客投诉；</li>
+                                        <li>带领和辅导下属进行保单运营管理工作，确保客户回访、保单递送等新契约环节的顺畅；</li>
+                                        <li>带领和辅导下属进行保单挽留和保费催缴工作；</li>
+                                        <li>部门人员的人力发展计划和人员业务水平提升培训；</li>
+                                        <li>对下属人员的考核、评价、激励；</li>
+                                        <li>部门业务制度（质检、运营等）的制定和落实；部门费用预算的计划、控制；</li>
+                                        <li>工作成果报告，营运成果效益评估、改善报告，部门年度计划的编订； 短、中、长期营运策略拟定与呈报；</li>
+                                        <li>完成公司高层指派的其它工作。 </li>
+                                    </ol>
+                                </div>
+                                <div class="job-block">
+                                    <h3 id="section-1">我们对您的期望</h3>
+                                    <h4 id="section-2">必备条件</h4>
+                                    <ol>
+                                        <li>全日制大学本科学历；</li>
+                                        <li>六年以上工作经验，其中至少三年以上的保险从业经验，至少两年以上的保险质检或运营从业经验；</li>
+                                        <li>了解保险电话销售或电话客服行业，具有业务的全局观和敏锐的市场洞察力；</li>
+                                        <li>有丰富的部门管理、组织架构建立及绩效制度管理的经验。</li>
+                                        <li>良好的沟通和文字表达能力，人际关系良好；</li>
+                                        <li>熟悉MS Office的使用（Excel，Word，PPT等）。</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hide-content">
+                            <ul class="job-line">
+                                <li class="job-name">电话销售岗</li>
+                                <li class="job-name">保险</li>
+                                <li class="job-name">上海-浦东</li>
+                                <li class="job-a"><a class="button accent-alt">查看</a></li>
+                            </ul>
+                            <div class="job-content">
+                                <div class="job-block">
+                                    <h3 id="section">岗位职责：</h3>
+                                    <ol>
+                                        <li>通过电话向客户推销理财产品；</li>
+                                        <li>对客户进行售后电话回访，了解客户对销售服务的满意度或建议。</li>
+                                    </ol>
+                                </div>
+                                <div class="job-block">
+                                    <h3 id="section-1">我们对您的期望</h3>
+                                    <h4 id="section-2">必备条件</h4>
+                                    <ol>
+                                        <li>中专以上学历，年龄30岁以下；</li>
+                                        <li>普通话标准，语言表达清晰。</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- End Blog Block -->
+
+
+    <!-- Begin Footer -->
+    <footer></footer>
+    <!-- End Footer -->
+
+    <!-- Javascript -->
+    <script src="js/retina.js"></script>
+    <script src="js/backgroundcheck.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>
+        $('.job-a a').click(function() {
+            var jobContent = $(this).parents('li.hide-content').find('.job-content');
+            $('.hide-content .job-content').slideUp();
+            if (jobContent.css('display') == 'none') {
+                jobContent.slideDown();
+            }
+
+        });
+    </script>
+</body>
+
+</html>

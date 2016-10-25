@@ -1,0 +1,137 @@
+﻿<!doctype html>
+<!--[if IE 8 ]><html class="ie no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN"> <![endif]-->
+<!--[if IE 9]> <html class="ie9 no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>联系我们 - 宜保</title>
+    <meta name="description" content="宜保金融">
+    <meta name="keywords" content="宜保金融">
+    <meta name="author" content="红豆杉">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Fonts -->
+    <!--<link href='http://fonts.useso.com/css?family=Lato:300,400|Montserrat' rel='stylesheet' type='text/css'>-->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/framework.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        .info h2{border-bottom: 1px solid #ccc;padding-bottom: 15px;display: inline-block;}
+        .info p.f{font-weight: 400;color: black;font-size: 18px;}
+        .info p{color: #808080;}
+        #allmap{width: 100%;height: 300px;border-radius: 15px;border:1px solid #ccc;}
+
+    </style>
+</head>
+
+<body>
+    <!-- Begin Navigation -->
+    <nav class="mobile">
+
+
+
+        <!-- Menu -->
+        <ul class="nav-content clearfix"></ul>
+        <!-- END -->
+
+    </nav>
+    <header class="mobile">
+
+        <!-- Logo -->
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="Form Logo" width="96" height="35" /></a>
+
+        <!-- Menu Button -->
+        <button type="button" class="nav-button">
+		  <div class="button-bars"></div>
+	    </button>
+        <!-- END -->
+
+    </header>
+
+    <div class="sticky-head"></div>
+    <!-- End Navigation -->
+
+    <!-- Begin Small Hero Block -->
+    <section class="hero small accent parallax" style="background-image: url(images/parallax.png);">
+
+        <!-- Heading -->
+        <div class="hero-content container">
+            <h1>联系我们</h1>
+        </div>
+        <!-- END -->
+
+        <!-- Button -->
+        <div class="sub-hero container">
+            <span class="line"></span>
+        </div>
+        <!-- END -->
+
+    </section>
+    <!-- End Small Hero Block -->
+
+    <!-- Begin Portfolio Block -->
+    <section class="content container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 info">
+                    <h2><i class="icon gray paper-plane"></i>公司地址</h2>
+                    <p class="f">上海宜保金融服务有限公司</p>
+                    <p>地址：浦东新区张江高科技园卡园二路108号1幢</p>
+                    <p>邮编：201201</p>
+                    <p>电话：+86-21-68619188</p>
+                    <p>传真：+86-21-68619189</p>
+                    <p>E-mail：hr@e-surer.com</p>
+                </div>
+                <div class="col-md-6">
+                    <div id="allmap"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Portfolio Block -->
+
+    <!-- End Call to Action Block -->
+
+    <!-- Begin Footer -->
+    <footer></footer>
+    <!-- End Footer -->
+
+    <!-- Javascript -->
+    <script src="js/retina.js"></script>
+    <script src="js/backgroundcheck.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=bpE5XGoE5ZG9M9HGCQQRn99a95Sa2x6y"></script>
+    <script type="text/javascript">
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");    // 创建Map实例
+        var marker = new BMap.Marker(new BMap.Point(121.675345,31.24318)); // 创建点
+        map.centerAndZoom(new BMap.Point(121.67535,31.24319), 18);  // 初始化地图,设置中心点坐标和地图级别
+        map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+        map.setCurrentCity("上海");          // 设置地图显示的城市 此项是必须设置的
+        map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+        map.addOverlay(marker);            //增加点
+    </script>
+</body>
+
+</html>
